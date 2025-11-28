@@ -1,0 +1,113 @@
+html {
+   font-family: "Montserrat", sans-serif;
+   font-weight: normal;
+}
+
+body {
+   font-size: 20px;
+   line-height: 25px;
+   color: rgb(153, 130, 12);
+}
+
+input {
+   border: 1px solid black;
+   background-color: sandybrown;
+}
+
+.form {
+   width: 40%;
+   border: 2px solid black;
+   margin: 30px;
+   text-align: center;
+}
+
+section {
+   margin-top: 20px;
+   padding: 10px 0;
+   border: 1px dashed black;
+}
+
+.form-section {
+   font-size: 1.4rem;
+}
+
+.contacts-section {
+   font-size: 0.8rem;
+}
+
+h2 {
+   margin-bottom: 10px;
+}
+
+.photo-link {
+   display: block;
+   width: 200px;
+   height: 200px;
+   overflow: hidden;
+   border: 3px dotted green;
+   border-radius: 50%;
+}
+
+.photo-link img {
+   display: block;
+   object-fit: cover;
+}
+
+
+.personal-info-title {
+   text-transform: uppercase;
+   letter-spacing: 5px;
+}
+
+.personal-info-title::first-letter {
+   color: red;
+   font-weight: 900;
+}
+
+ul {
+   list-style: none;
+}
+
+.job-item::before {
+   content: "→";
+}
+
+.duty-item {
+   text-transform: lowercase;
+}
+
+.duty-item::before {
+   content: "💼"
+}
+
+
+.contacts-section a {
+   display: inline-block;
+   width: 30px;
+   height: 30px;
+   margin: 0 10px;
+}
+
+.contacts-section a img {
+   width: 30px;
+   height: 30px;
+}
+
+.contacts-section a img:hover {
+   filter: brightness(0) saturate(100%) invert(24%) sepia(88%) saturate(7296%) hue-rotate(357deg) brightness(97%) contrast(115%);
+}
+
+
+p {
+   word-spacing: 10px;
+}
+
+.google-link:hover {
+   color: aqua;
+   text-decoration: underline;
+}
+
+.google-link:hover {
+   color: aqua;
+   text-decoration: underline;
+}

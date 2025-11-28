@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Stage 2</title>
+   <link rel="stylesheet" href="styles/null-styles.css">
+   <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+   <table>
+      <caption>Some humans data table</caption>
+      <thead>
+         <tr>
+            <th rowspan="2">Person</th>
+            <th colspan="2">Body params</th>
+            <th rowspan="2">Gender</th>
+            <th rowspan="2">Town</th>
+            <th rowspan="2">Age</th>
+         </tr>
+         <tr>
+            <th>Heigth</th>
+            <th>Weight</th>
+         </tr>
+      </thead>
+      <tbody>
+         <tr>
+            <th>John Smith</th>
+            <td>180 cm</td>
+            <td>75 kg</td>
+            <td>Male</td>
+            <td>New York</td>
+            <td>28</td>
+         </tr>
+         <tr>
+            <th>Emma Johnson</th>
+            <td>165 cm</td>
+            <td>58 kg</td>
+            <td>Female</td>
+            <td>London</td>
+            <td>25</td>
+         </tr>
+         <tr>
+            <th>Michael Brown</th>
+            <td>175 cm</td>
+            <td>82 kg</td>
+            <td>Male</td>
+            <td>Chicago</td>
+            <td>32</td>
+         </tr>
+         <tr>
+            <th>Sophia Davis</th>
+            <td>170 cm</td>
+            <td>65 kg</td>
+            <td>Female</td>
+            <td>Paris</td>
+            <td>29</td>
+         </tr>
+         <tr>
+            <th>Robert Wilson</th>
+            <td>185 cm, some more text</td>
+            <td>90 kg, some more text</td>
+            <td>Male, some more text</td>
+            <td>Berlin, some more text</td>
+            <td>35, some more text</td>
+         </tr>
+      </tbody>
+      <tfoot>
+         <tr>
+            <td>Summary</td>
+            <td>Summary</td>
+            <td>Summary</td>
+            <td>Summary</td>
+            <td>Summary</td>
+            <td>Summary</td>
+         </tr>
+      </tfoot>
+   </table>
+
+   <hr>
+
+   <form action="/submit" method="post">
+      <fieldset>
+         <legend>Contact info</legend>
+
+         <label for="first-name">First name</label>
+         <input type="text" id="first-name" placeholder="First name" name="first-name" required> 
+
+         <label for="last-name">Last name</label>
+         <input type="text" id="last-name" placeholder="Last name" name="last-name" required>
+
+         <label for="age">Age</label>
+         <input type="number" max="99" id="age" value="42" placeholder="Age" name="age" required> 
+
+         <label for="email">Your email address</label>
+         <input type="email" id="email" placeholder="you@example.com" name="email" required> 
+
+         <label for="phone">Your phone number</label>
+         <input type="tel" id="phone" placeholder="Phone number" name="phone" required> 
+
+         <label for="passsword">Secure input</label>
+         <input type="password" id="passsword" placeholder="type secure info here" name="password" required>
+
+         <label for="disabled">Optional disabled field</label>
+         <input type="text" id="disabled" placeholder="disabled field" name="disabled" disabled>
+      </fieldset>
+
+      <hr>
+
+      <fieldset>
+         <legend>Select you experience years</legend>
+
+         <div>
+            <input type="radio" id="min" name="exp" value="min" checked>
+            <label for="min">Less than 1</label>
+         </div>
+         
+         <div>
+            <input type="radio" id="middle" name="exp" value="middle">
+            <label for="middle">1 - 3</label>
+         </div>
+
+         <div>
+            <input type="radio" id="max" name="exp" value="max">
+            <label for="max">More than 3</label>
+         </div>
+      </fieldset>
+
+      <hr>
+
+      <fieldset>
+         <legend>About you</legend>
+
+         <label for="gender">Select your gender</label>
+         <select name="gender" id="gender">
+            <option value="m">Male</option>
+            <option value="f">Female</option>
+         </select>
+
+         <label for="about">About you</label>
+         <textarea name="about" id="about" rows="2" minlength="2" maxlength="100" placeholder="Couple of words about you"></textarea>
+
+         <label for="experience">Your experience</label>
+         <textarea name="experience" id="experience" rows="5" minlength="2" maxlength="250" placeholder="Tell us about your experience"></textarea>
+      </fieldset>
+
+      <fieldset>
+         <input type="checkbox" value="agreed" id="agree" name="agree">
+         <label for="agree">Accept personal data processing</label>
+      </fieldset>
+
+      <button type="submit">Send</button>
+   </form>
+</body>
+</html>

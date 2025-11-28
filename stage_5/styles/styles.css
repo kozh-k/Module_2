@@ -1,0 +1,94 @@
+.card {
+   font-size: 20px;
+   text-align: center;
+   border: 3px solid black;
+   border-radius: 10px;
+   margin: 50px auto;
+   padding: 15px;
+   max-width: 300px;
+   height: 400px;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   box-shadow: 0 10px 20px rgba(0, 0, 0, 1);
+
+   background: linear-gradient(45deg, yellow, green);
+
+   transition: all 0.3s ease;
+
+   animation:
+      fadeIn 2s ease-out 1 normal,
+      rotation 2s ease-in-out,
+      colorChange 3s ease-in-out;
+}
+
+.card:hover {
+   transform: scale(110%) translateY(50px);
+   background: yellow;
+   opacity: 70%;
+}
+
+.card:active {
+   transform: rotateZ(90deg) skew(20deg) scale(60%);
+}
+
+@keyframes fadeIn {
+   0% {
+      opacity: 0;
+      transform: scale(60%);
+   }
+
+   100% {
+      opacity: 1;
+      transform: scale(1);
+   }
+}
+
+@keyframes rotation {
+   0% {
+      transform: rotateZ(180deg);
+   }
+
+   100% {
+      transform: rotateZ(0);
+   }
+}
+
+@keyframes colorChange {
+   0% {
+      background-color: aqua;
+   }
+
+   100% {
+      background: linear-gradient(45deg, yellow, green);
+   }
+}
+
+.card-image {
+   display: inline-block;
+   margin: 0 auto;
+   width: 150px;
+   border-radius: 10px;
+
+   transform: scale(0);
+
+   animation: imageAppear 2s ease 3s forwards;
+}
+
+@keyframes imageAppear {
+   0% {
+      transform: scale(0);
+   }
+
+   100% {
+      transform: scale(1);
+   }
+}
+
+.card-title {
+   font-size: 1.3em;
+}
+
+.card-description {
+   font-style: italic;
+}

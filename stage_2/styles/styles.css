@@ -2,14 +2,22 @@ body {
    font-size: 20px;
 }
 
-table {
-   display: block;
+.container {
    margin: 1rem auto;
+   overflow: scroll;
    width: 600px;
    height: 400px;
    border: 2px solid black;
+}
+
+table {
+   /* display: block;
+   overflow: auto;
+   table-layout: fixed;
+   width: 600px;
+   height: 400px; */
    border-collapse: collapse;
-   overflow: scroll;
+   
 }
 
 caption {
